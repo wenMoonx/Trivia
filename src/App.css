@@ -77,11 +77,11 @@ body {
   margin-top: 25px;
 }
 
-.pagination .buttons {
+.container .buttons {
   margin-top: 30px;
 }
 
-.pagination button {
+.container button {
   border: none;
   background-color: transparent;
   font-size: 20px;
@@ -89,11 +89,11 @@ body {
   padding: 5px;
 }
 
-.pagination button:hover {
+.container button:hover {
   background-color: #ccc;
 }
 
-.pagination button:active {
+.container button:active {
   background-color: #ddd;
 }
 

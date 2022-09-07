@@ -13,23 +13,23 @@ const Quiz: React.FC<IQuiz> = (props: IQuiz) => {
 				></div>
 				<div className="pagination">
 					{page} of {total_pages}
-					<div className="buttons">
-						<button
-							onClick={() => {
-								onAnswer("True");
-							}}
-						>
-							True
-						</button>
-						<button
-							onClick={() => {
-								onAnswer("False");
-							}}
-						>
-							False
-						</button>
-					</div>
 				</div>
+			</div>
+			<div className="buttons">
+				<button
+					onClick={() => {
+						onAnswer("True");
+					}}
+				>
+					True
+				</button>
+				<button
+					onClick={() => {
+						onAnswer("False");
+					}}
+				>
+					False
+				</button>
 			</div>
 		</div>
 	);
