@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  padding: 50px 0px 100px 0px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .heading {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.container .comment {
+  font-size: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .question {
+  font-size: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.container .category {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.container .content {
+  flex: 1;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .content-box {
+  border: 1px solid black;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.content .pagination {
+  margin-top: 25px;
+}
+
+.pagination .buttons {
+  margin-top: 30px;
+}
+
+.pagination button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination button:active {
+  background-color: #ddd;
+}
+
+.loading {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .3);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.results {
+  padding-top: 40px;
+  flex: 1;
+  word-break: break-all;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  color: #444;
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.tick {
+  margin-right: 10px;
+}
+
+.item .question {
+  text-align: left;
+}
+
+.reset-button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.reset-button:hover {
+  color: #444;
+}
+
+.reset-button:active {
+  color: #ddd;
+}
