@@ -8,10 +8,12 @@ const quizSlice = createSlice({
 	initialState: {
 		questions: [],
 		answers: [],
+		started: false
 	},
 	reducers: {
 		setQuestions: (state: any, action: any) => {
 			state.questions = action.payload;
+			state.started = true;
 		},
 		setAnswer: (state: any, action: any) => {
 			state.answers.push(action.payload);
@@ -20,10 +22,13 @@ const quizSlice = createSlice({
 			state.questions = [];
 			state.answers = [];
 		},
+		setStarted: (state: any, action: any) => {
+			state.started = action.payload;
+		}
 	},
 });
 
-export const { setQuestions, setAnswer, reset } = quizSlice.actions;
+export const { setQuestions, setAnswer, reset, setStarted } = quizSlice.actions;
 
 export const fetchQuestions = () => (dispatch: Dispatch<any>) => {
 	axios.get(Config.API_URL).then(({ data }) => {
@@ -57,5 +62,9 @@ export const getResults = (state: any) => {
 		right: answers[index] === q.correct_answer,
 	}));
 };
+
+export const getStarted = (state: any) => {
+	return state.quiz.started;
+}
 
 export default quizSlice.reducer;

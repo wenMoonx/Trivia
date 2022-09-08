@@ -3,7 +3,7 @@ import { useAppSelector, useAppDispatch } from "./../../hooks";
 import { getResults, reset } from "./../../reducer";
 import { useNavigate } from "react-router-dom";
 
-import Item from "./item";
+import Item from "./Item";
 
 const Results = () => {
 	const results = useAppSelector(getResults);

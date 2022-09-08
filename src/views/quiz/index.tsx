@@ -3,8 +3,8 @@ import { useAppSelector, useAppDispatch } from "../../hooks";
 import { selectQuestion, fetchQuestions, setAnswer } from "../../reducer";
 import { useNavigate } from "react-router-dom";
 
-import Loading from "./loading";
-import Quiz from "./quiz";
+import Loading from "./../../components/Loading";
+import Quiz from "./Quiz";
 
 const QuizScreen = () => {
 	const dispatch = useAppDispatch();
